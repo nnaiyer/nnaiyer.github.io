@@ -1,13 +1,22 @@
 .home {
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  margin-top: 200px;
   font-size: 50px;
+
+
 }
 
 
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+
 .light-mode {
-    position:fixed;
     padding:0;
     margin:0;
 
@@ -22,7 +31,6 @@
 
 
 .dark-mode {
-    position:fixed;
     padding:0;
     margin:0;
 
@@ -47,7 +55,7 @@
   padding-left: 0px;
 }
 
-.aboutMe{
+.aboutMe {
 
 }
 
@@ -55,8 +63,10 @@
 .TopBar {
   font-family: 'Raleway', sans-serif;
   margin-top: 0px;
+  padding-top: 0px;
   font-size: 16px;
   font-weight: bold;
+  max-height: 50px;
 }
 
 .color-nav {
@@ -67,3 +77,5 @@
 .App-link {
   color: #61dafb;
 }
+
+

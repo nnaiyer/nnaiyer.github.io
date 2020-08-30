@@ -37,11 +37,9 @@ function App() {
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"}>
 
-      // <NavBar/>
 
-
-      <div className="TopBar">
-        <Navbar expand="lg" fixed="top" className="color-nav">
+      <div>
+        <Navbar expand="lg" fixed="top" className="color-nav TopBar">
 
         <Navbar.Brand href="#lightdarktoggle">
           <IconContext.Provider value={{ style: {fontSize: '30px'}}}>
@@ -85,13 +83,13 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <Nav.Link href="#AboutMe">
-              {darkMode ? <h6 style={{color:"white", marginTop:"2px", fontWeight:"bold"}}>ABOUT ME</h6> : <h6 style={{color:"black", marginTop:"2px", fontWeight:"bold"}}>ABOUT ME</h6>}
+              {darkMode ? <h6 style={{color:"white", marginTop:"12px",fontWeight:"bold"}}>ABOUT ME</h6> : <h6 style={{color:"black", marginTop:"12px", fontWeight:"bold"}}>ABOUT ME</h6>}
               </Nav.Link>
               <Nav.Link href="#Skills">
-                {darkMode ? <h6 style={{color:"white", marginTop:"2px", fontWeight:"bold"}}>SKILLS</h6> : <h6 style={{color:"black", marginTop:"2px", fontWeight:"bold"}}>SKILLS</h6>}
+                {darkMode ? <h6 style={{color:"white", marginTop:"12px", fontWeight:"bold"}}>SKILLS</h6> : <h6 style={{color:"black", marginTop:"12px", fontWeight:"bold"}}>SKILLS</h6>}
               </Nav.Link>
               <Nav.Link href="#Projects">
-                {darkMode ? <h6 style={{color:"white", marginTop:"2px", fontWeight:"bold"}}>PROJECTS</h6> : <h6 style={{color:"black", marginTop:"2px", fontWeight:"bold"}}>PROJECTS</h6>}
+                {darkMode ? <h6 style={{color:"white", marginTop:"12px", fontWeight:"bold"}}>PROJECTS</h6> : <h6 style={{color:"black", marginTop:"12px", fontWeight:"bold"}}>PROJECTS</h6>}
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -108,20 +106,24 @@ function App() {
 
 
 
-      <div className="home" id="home">
+      <div className="home container" id="home">
         <ReactRevealText
           text="NABEEL NAIYER"
           show
       />
       </div>
-      <div className="aboutMe" id="aboutme">
 
-
-
-
-
-
+      <div className="aboutMe container">
+      <h2>
+      About Me
+      </h2>
+      <div>
+      Enter text here
       </div>
+      </div>
+
+
+
     </div>
   );
 }
