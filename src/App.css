@@ -6,6 +6,32 @@
 
 }
 
+.topText {
+  margin-right: 15px;
+}
+
+.topButtons {
+  background-color: transparent;
+  border: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.topButtons:focus {
+  outline:none;
+}
+
+html{scroll-behavior:smooth}
+
+a, a:hover {
+    color: white;
+    text-decoration: none !important;
+}
+
+h6 {
+    display: inline-block;
+}
+
 
 .container {
   min-height: 100vh;
@@ -47,6 +73,7 @@
   background-color: #393636;
 }
 
+.modeToggle:focus {outline:0;}
 
 .modeToggle {
   background-color: transparent;
@@ -56,17 +83,24 @@
 }
 
 .aboutMe {
+}
+
+.aboutText {
+
+}
+
+
+.Photo {
 
 }
 
 
 .TopBar {
   font-family: 'Raleway', sans-serif;
-  margin-top: 0px;
   padding-top: 0px;
   font-size: 16px;
   font-weight: bold;
-  max-height: 50px;
+  max-height: 35px;
 }
 
 .color-nav {
