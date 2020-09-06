@@ -37,14 +37,14 @@
 }
 
 .hexagon-in2 {
-  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
-  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+/*  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);*/
   overflow: hidden;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-image: url("ruby.png");
+  background: purple;
 
   -webkit-background-size: 205%;
   -moz-background-size: 205%;
@@ -65,13 +65,13 @@
 }
 
 .hexagon-in2:hover {
-  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
-  box-shadow: inset 0 0 0 0px #B0DAD4;
+/*  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
+  box-shadow: inset 0 0 0 0px #B0DAD4;*/
 }
 
 .hexagon-in-pep {
-  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
-  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+/*  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);*/
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -81,8 +81,8 @@
 
   -webkit-background-size: 210%;
   -moz-background-size: 210%;
-  background-size: 230%;
-  background-position: bottom -26px right -85px ;
+  background-size: 210%;
+  background-position: bottom -10px right -75px ;
   visibility: visible;
 
   -webkit-transform: rotate(-120deg);
@@ -95,17 +95,19 @@
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
 .hexagon-in-pep:hover {
-  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
-  box-shadow: inset 0 0 0 0px #B0DAD4;
+/*  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
+  box-shadow: inset 0 0 0 0px #B0DAD4;*/
+  background-size: 230%;
+  background-position: bottom -26px right -85px ;
 }
 
 .hexagon-in-nin {
-  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
-  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+/*  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);*/
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -129,18 +131,20 @@
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
 .hexagon-in-nin:hover {
   -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
   box-shadow: inset 0 0 0 0px #B0DAD4;
+  background-size: 270%;
+  background-position: bottom -26px left -122px;
 }
 
 
 .hexagon-in-prof {
-  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
-  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+/*  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);*/
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -150,8 +154,8 @@
 
   -webkit-background-size: 250%;
   -moz-background-size: 250%;
-  background-size: 140%;
-  background-position: bottom 40px left -25px;
+  background-size: 120%;
+  background-position: bottom 55px left -10px;
   visibility: visible;
 
   -webkit-transform: rotate(-120deg);
@@ -164,18 +168,20 @@
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
 .hexagon-in-prof:hover {
-  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
-  box-shadow: inset 0 0 0 0px #B0DAD4;
+/*  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
+  box-shadow: inset 0 0 0 0px #B0DAD4;*/
+  background-size: 140%;
+  background-position: bottom 40px left -25px;
 }
 
 
 .hexagon-in-vrtx {
-  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
-  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+/*  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);*/
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -185,8 +191,8 @@
 
   -webkit-background-size: 250%;
   -moz-background-size: 250%;
-  background-size: 180%;
-  background-position: bottom 30px left -50px;
+  background-size: 150%;
+  background-position: bottom 50px left -30px;
   visibility: visible;
 
   -webkit-transform: rotate(-120deg);
@@ -199,11 +205,13 @@
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
 .hexagon-in-vrtx:hover {
-  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
-  box-shadow: inset 0 0 0 0px #B0DAD4;
+/*  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
+  box-shadow: inset 0 0 0 0px #B0DAD4;*/
+  background-size: 170%;
+  background-position: bottom 35px left -45px;
 }
 
