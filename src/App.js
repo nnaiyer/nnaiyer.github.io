@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
+import './hexi.css';
 import NavBar from './navbar.js';
 import ReactRevealText from 'react-reveal-text';
 import {BsMoon} from 'react-icons/bs';
@@ -33,8 +34,9 @@ import {DiReact} from 'react-icons/di'
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 
+import {TextFocus} from 'react-text-effects';
 
-
+import Hexagon from 'react-hexagon'
 
 
 
@@ -55,6 +57,9 @@ function App() {
   </Tooltip>
 );
 
+
+
+
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"}>
 
@@ -62,7 +67,7 @@ function App() {
       <div>
         <Navbar expand="lg" fixed="top" className="color-nav TopBar">
 
-        <Navbar.Brand href="#lightdarktoggle">
+        <Navbar.Brand>
           <IconContext.Provider value={{ style: {fontSize: '24px', marginTop:'3px'}}}>
             <div>
               <button className="modeToggle" onClick={() => setDarkMode(prevMode => !prevMode)}>
@@ -171,11 +176,11 @@ function App() {
 
 
       <div className="home container" id="home">
-        <ReactRevealText
-          text="NABEEL NAIYER"
-          show
-      />
+        <TextFocus type='in' duration='1s'>
+          NABEEL NAIYER
+        </TextFocus>
       </div>
+
 
       <div className="aboutMe container" id="aboutMe">
         <h2>
@@ -189,7 +194,7 @@ function App() {
               I graduated from The University of Texas at Austin with a B.S. in Electrical Engineering and a B.S. in Mathematics.
               In my professional life, I'm a software engineer who has been working at Visa since June 2019. <br/><br/>
               In my personal life, I'm a huge fan of hiking and bouldering! One of my short-term goals is to visit every national park in America (Alaska's gonna be tough). But I'm not all about the outdoors; you can catch me playing games on my Switch or (virtually) hanging out with friends when I have some downtime. <br/><br/>
-              I also think it's super fun to experiment with food recipes! Check out my food related life here: INSERT LINK HERE.
+              I also think it's super fun to experiment with food recipes! I'm also an amateur food critic. Check out my food rankings for Austin, TX <a href="https://docs.google.com/spreadsheets/d/1L4AV6epjmTvINBdifnoo9D4oBSQW_bxOIT3oo4QjHec/edit?usp=sharing" target="_blank"><b>here!</b></a>
               <br/><br/><br/><br/>
 
               <div className="techIcons">
@@ -240,13 +245,76 @@ function App() {
               </Carousel>
             </Col>
           </Row>
+          <br/><br/><br/><br/><br/><br/>
+          <Row/>
         </div>
 
 
         <div className="projects container" id="projects">
-          <h2>
-            Hi! These are my projects!
-          </h2>
+        <Row>
+        <Col lg={4} style={{marginTop:"300px"}}>
+        <div className="wrap">
+          <div class="lab_item" style={{right:"56px", bottom:"56px"}}>
+            <div class="hexagon hexagon2">
+              <div class="hexagon-in1">
+                <div class="hexagon-in-pep">
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="lab_item" style={{right:"120px", bottom:"135px"}}>
+            <div class="hexagon hexagon2">
+              <div class="hexagon-in1">
+                <div class="hexagon-in2">
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="lab_item" style={{right:"184px", bottom:"55px"}}>
+            <div class="hexagon hexagon2">
+              <div class="hexagon-in1">
+                <div class="hexagon-in-nin">
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="lab_item" style={{right:"520px", top:"23px"}}>
+            <div class="hexagon hexagon2">
+              <div class="hexagon-in1">
+                <div class="hexagon-in-prof">
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="lab_item" style={{right:"856px", top:"102px"}}>
+            <div class="hexagon hexagon2">
+              <div class="hexagon-in1">
+                <div class="hexagon-in2">
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="lab_item" style={{bottom:"55px", left:"80px"}}>
+            <div class="hexagon hexagon2">
+              <div class="hexagon-in1">
+                <div class="hexagon-in-vrtx">
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="lab_item" style={{bottom:"134px", left:"17px"}}>
+            <div class="hexagon hexagon2">
+              <div class="hexagon-in1">
+                <div class="hexagon-in2">
+                </div>
+              </div>
+             </div>
+          </div>
+          </div>
+          </Col>
+          <Col style={{marginTop:"300px", marginLeft:"100px"}}> <p>Placeholder</p>
+          </Col>
+          </Row>
         </div>
 
       </div>
@@ -262,3 +330,5 @@ function App() {
 }
 
 export default App;
+
+

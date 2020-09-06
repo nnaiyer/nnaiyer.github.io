@@ -1,7 +1,7 @@
 .home {
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  font-size: 50px;
+  font-size: 60px;
 
 
 }
@@ -22,15 +22,6 @@
 }
 
 html{scroll-behavior:smooth}
-
-a, a:hover {
-    color: white;
-    text-decoration: none !important;
-}
-
-h6 {
-    display: inline-block;
-}
 
 
 .container {
@@ -100,7 +91,7 @@ h6 {
   padding-top: 0px;
   font-size: 16px;
   font-weight: bold;
-  max-height: 35px;
+  max-height: 45px;
 }
 
 .color-nav {
@@ -112,4 +103,11 @@ h6 {
   color: #61dafb;
 }
 
+.blockContainer > div{
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.wrap {
+  min-width: 1000px;
+}
