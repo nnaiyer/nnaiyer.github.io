@@ -3,6 +3,7 @@ import {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 import './hexi.css';
+import Projects from './projects.js';
 import NavBar from './navbar.js';
 import ReactRevealText from 'react-reveal-text';
 import {BsMoon} from 'react-icons/bs';
@@ -29,6 +30,7 @@ import {DiJava} from 'react-icons/di'
 import {DiJavascript1} from 'react-icons/di'
 import {DiMsqlServer} from 'react-icons/di'
 import {DiReact} from 'react-icons/di'
+import {SiMathworks} from 'react-icons/si'
 
 
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -36,7 +38,10 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 
 import {TextFocus} from 'react-text-effects';
 
-import Hexagon from 'react-hexagon'
+
+
+
+
 
 
 
@@ -56,6 +61,8 @@ function App() {
     {props}
   </Tooltip>
 );
+
+
 
 
 
@@ -194,7 +201,7 @@ function App() {
               I graduated from The University of Texas at Austin with a B.S. in Electrical Engineering and a B.S. in Mathematics.
               In my professional life, I'm a software engineer who has been working at Visa since June 2019. <br/><br/>
               In my personal life, I'm a huge fan of hiking and bouldering! One of my short-term goals is to visit every national park in America (Alaska's gonna be tough). But I'm not all about the outdoors; you can catch me playing games on my Switch or (virtually) hanging out with friends when I have some downtime. <br/><br/>
-              I also think it's super fun to experiment with food recipes! I'm also an amateur food critic. Check out my food rankings for Austin, TX <a href="https://docs.google.com/spreadsheets/d/1L4AV6epjmTvINBdifnoo9D4oBSQW_bxOIT3oo4QjHec/edit?usp=sharing" target="_blank"><b>here!</b></a>
+              I also have fun experimenting with food recipes! And of course being an amateur food critic for Austin. Check out my food rankings <a href="https://docs.google.com/spreadsheets/d/1L4AV6epjmTvINBdifnoo9D4oBSQW_bxOIT3oo4QjHec/edit?usp=sharing" target="_blank"><b>here!</b></a>
               <br/><br/><br/><br/>
 
               <div className="techIcons">
@@ -209,10 +216,13 @@ function App() {
                       <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("JavaScript")}>
                         {darkMode ? <DiJavascript1 style={{color:"white", marginLeft:"15px"}}/> : <DiJavascript1 style={{color:"black", marginLeft:"15px"}}/>}
                       </OverlayTrigger>
+                      <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("MATLAB")}>
+                        {darkMode ? <SiMathworks style={{color:"white", marginLeft:"15px", fontSize:"35px"}}/> : <SiMathworks style={{color:"black", marginLeft:"15px"}}/>}
+                      </OverlayTrigger>
                       <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("SQL Server")}>
                         {darkMode ? <DiMsqlServer style={{color:"white", marginLeft:"15px"}}/> : <DiMsqlServer style={{color:"black", marginLeft:"15px"}}/>}
                       </OverlayTrigger>
-                      <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("React")}>
+                      <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("ReactJS")}>
                         {darkMode ? <DiReact style={{color:"white", marginLeft:"15px"}}/> : <DiReact style={{color:"black", marginLeft:"15px"}}/>}
                       </OverlayTrigger>
                     </div>
@@ -249,73 +259,8 @@ function App() {
           <Row/>
         </div>
 
+        <Projects/>
 
-        <div className="projects container" id="projects">
-        <Row>
-        <Col lg={4} style={{marginTop:"300px"}}>
-        <div className="wrap">
-          <div class="lab_item" style={{right:"56px", bottom:"56px"}}>
-            <div class="hexagon hexagon2">
-              <div class="hexagon-in1">
-                <div class="hexagon-in-pep">
-                </div>
-              </div>
-             </div>
-          </div>
-          <div class="lab_item" style={{right:"120px", bottom:"135px"}}>
-            <div class="hexagon hexagon2">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2">
-                </div>
-              </div>
-             </div>
-          </div>
-          <div class="lab_item" style={{right:"184px", bottom:"55px"}}>
-            <div class="hexagon hexagon2">
-              <div class="hexagon-in1">
-                <div class="hexagon-in-nin">
-                </div>
-              </div>
-             </div>
-          </div>
-          <div class="lab_item" style={{right:"520px", top:"23px"}}>
-            <div class="hexagon hexagon2">
-              <div class="hexagon-in1">
-                <div class="hexagon-in-prof">
-                </div>
-              </div>
-             </div>
-          </div>
-          <div class="lab_item" style={{right:"856px", top:"102px"}}>
-            <div class="hexagon hexagon2">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2">
-                </div>
-              </div>
-             </div>
-          </div>
-          <div class="lab_item" style={{bottom:"55px", left:"80px"}}>
-            <div class="hexagon hexagon2">
-              <div class="hexagon-in1">
-                <div class="hexagon-in-vrtx">
-                </div>
-              </div>
-             </div>
-          </div>
-          <div class="lab_item" style={{bottom:"134px", left:"17px"}}>
-            <div class="hexagon hexagon2">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2">
-                </div>
-              </div>
-             </div>
-          </div>
-          </div>
-          </Col>
-          <Col style={{marginTop:"300px", marginLeft:"100px"}}> <p>Placeholder</p>
-          </Col>
-          </Row>
-        </div>
 
       </div>
       </div>

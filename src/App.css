@@ -77,14 +77,12 @@ html{scroll-behavior:smooth}
 }
 
 .aboutText {
-
 }
 
 
 .Photo {
 
 }
-
 
 .TopBar {
   font-family: 'Raleway', sans-serif;
@@ -110,4 +108,8 @@ html{scroll-behavior:smooth}
 
 .wrap {
   min-width: 1000px;
+}
+
+.projectText {
+  transition: all 2s ease;
 }
