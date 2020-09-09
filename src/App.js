@@ -1,43 +1,29 @@
 import React from 'react';
-import {Component} from 'react';
-import ReactDOM from 'react-dom';
 import './App.css';
 import './hexi.css';
 import Projects from './projects.js';
-import NavBar from './navbar.js';
-import ReactRevealText from 'react-reveal-text';
-import {BsMoon} from 'react-icons/bs';
 import {BsSun} from 'react-icons/bs';
 import {RiMoonClearLine} from 'react-icons/ri'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
 import {GrLinkedin} from 'react-icons/gr';
 import {IconContext} from "react-icons"
 import {GrGithub} from 'react-icons/gr';
-import {GrMailOption} from 'react-icons/gr';
 import {FiMail} from 'react-icons/fi';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
+import {Link} from 'react-scroll'
 import {DiRuby} from 'react-icons/di'
 import {DiJava} from 'react-icons/di'
 import {DiJavascript1} from 'react-icons/di'
 import {DiMsqlServer} from 'react-icons/di'
 import {DiReact} from 'react-icons/di'
 import {SiMathworks} from 'react-icons/si'
-
-
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-
 import {TextFocus} from 'react-text-effects';
-
+import Pdf from '../src/NabeelNaiyer_SiteResume.pdf';
 
 
 
@@ -96,7 +82,7 @@ function App() {
         </Navbar.Brand>
         <Navbar.Brand href="#git">
           <IconContext.Provider value={{ style: {fontSize: '26px', marginTop:"5px"}}}>
-          <a href="https://github.com/nnaiyer" target="_blank" style={{color:"black"}}>
+          <a href="https://github.com/nnaiyer" target="_blank" rel="noopener noreferrer" style={{color:"black"}}>
             <div>
               {darkMode ? <GrGithub style={{color:"white"}}/> : <GrGithub style={{color:"black"}}/>}
             </div>
@@ -105,7 +91,7 @@ function App() {
         </Navbar.Brand>
         <Navbar.Brand href="#linkedin">
           <IconContext.Provider value={{ style: {fontSize: '22px', marginTop:"4px"}}}>
-            <a href="https://www.linkedin.com/in/nabeelnaiyer/" target="_blank" style={{color:"black"}}>
+            <a href="https://www.linkedin.com/in/nabeelnaiyer/" target="_blank" rel="noopener noreferrer" style={{color:"black"}}>
               <div>
                 {darkMode ? <GrLinkedin style={{color:"white"}}/> : <GrLinkedin style={{color:"black"}}/>}
               </div>
@@ -199,16 +185,16 @@ function App() {
           <Row>
             <Col lg={6}>
               I graduated from The University of Texas at Austin with a B.S. in Electrical Engineering and a B.S. in Mathematics.
-              In my professional life, I'm a software engineer who has been working at Visa since June 2019. <br/><br/>
+              In my professional life, I'm a software engineer who has been working at Visa since June 2019. You can check out my resume <a href={Pdf} target="_blank" rel="noopener noreferrer"><b>here.</b></a><br/><br/>
               In my personal life, I'm a huge fan of hiking and bouldering! One of my short-term goals is to visit every national park in America (Alaska's gonna be tough). But I'm not all about the outdoors; you can catch me playing games on my Switch or (virtually) hanging out with friends when I have some downtime. <br/><br/>
-              I also have fun experimenting with food recipes! And of course being an amateur food critic for Austin. Check out my food rankings <a href="https://docs.google.com/spreadsheets/d/1L4AV6epjmTvINBdifnoo9D4oBSQW_bxOIT3oo4QjHec/edit?usp=sharing" target="_blank"><b>here!</b></a>
+              I also have fun experimenting with food recipes! And if you're ever having trouble deciding what to eat in Austin, you can take a look at my favorite places to eat <a href="https://docs.google.com/spreadsheets/d/1L4AV6epjmTvINBdifnoo9D4oBSQW_bxOIT3oo4QjHec/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><b>here!</b></a>
               <br/><br/><br/><br/>
 
               <div className="techIcons">
                 <IconContext.Provider value={{ style: {fontSize: '40px'}}}>
                     <div>
                       <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("Ruby")}>
-                        {darkMode ? <DiRuby style={{color:"white", fontSize:"35px"}}/> : <DiRuby style={{color:"black", fontSize:"35px"}}/>}
+                        {darkMode ? <DiRuby style={{color:"white", fontSize:"30px"}}/> : <DiRuby style={{color:"black", fontSize:"35px"}}/>}
                       </OverlayTrigger>
                       <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("Java")}>
                         {darkMode ? <DiJava style={{color:"white", marginLeft:"15px"}}/> : <DiJava style={{color:"black", marginLeft:"15px"}}/>}
@@ -217,7 +203,7 @@ function App() {
                         {darkMode ? <DiJavascript1 style={{color:"white", marginLeft:"15px"}}/> : <DiJavascript1 style={{color:"black", marginLeft:"15px"}}/>}
                       </OverlayTrigger>
                       <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("MATLAB")}>
-                        {darkMode ? <SiMathworks style={{color:"white", marginLeft:"15px", fontSize:"35px"}}/> : <SiMathworks style={{color:"black", marginLeft:"15px"}}/>}
+                        {darkMode ? <SiMathworks style={{color:"white", marginLeft:"15px", fontSize:"30px"}}/> : <SiMathworks style={{color:"black", marginLeft:"15px"}}/>}
                       </OverlayTrigger>
                       <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("SQL Server")}>
                         {darkMode ? <DiMsqlServer style={{color:"white", marginLeft:"15px"}}/> : <DiMsqlServer style={{color:"black", marginLeft:"15px"}}/>}

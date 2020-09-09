@@ -1,4 +1,4 @@
-.lab_item {
+.hexClass {
   width: 200px;
   height: 230px;
   position: relative;
@@ -37,18 +37,18 @@
 }
 
 .hexagon-in2 {
-/*  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
-  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);*/
+  -webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
   overflow: hidden;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: 50%;
-  background: linear-gradient(59.82deg, #0976CE 0%, #0976CE 49.36%, #3A91D7 50.11%, #3A91D7 100%);
+  background-image: url("tbd.png");
 
   -webkit-background-size: 205%;
   -moz-background-size: 205%;
-  background-size: 210%;
+  background-size: 140%;
+  background-position: bottom 52px right -25px ;
   visibility: visible;
 
   -webkit-transform: rotate(-120deg);
@@ -61,12 +61,14 @@
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
 .hexagon-in2:hover {
-/*  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
-  box-shadow: inset 0 0 0 0px #B0DAD4;*/
+  -webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
+  box-shadow: inset 0 0 0 0px #B0DAD4;
+  background-size: 160%;
+  background-position: bottom 38px right -45px ;
 }
 
 .hexagon-in-pep {

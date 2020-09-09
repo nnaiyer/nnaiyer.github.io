@@ -1,8 +1,6 @@
 import React from 'react';
 import {Component} from 'react';
-import ReactDOM from 'react-dom';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import './hexi.css';
 import './App.css';
 import Button from 'react-bootstrap/Button';
@@ -12,10 +10,6 @@ import {GrGithub} from 'react-icons/gr';
 
 
 export default class ValueFour extends Component{
-  constructor(props){
-    super(props)
-    }
-
 
   render(){
    return(
@@ -29,7 +23,7 @@ export default class ValueFour extends Component{
                   <div style={{marginLeft:"5px"}}><Button variant="primary" size="sm" >HTML</Button>{' '}</div>
                   <div style={{marginLeft:"5px"}}><Button variant="primary" size="sm" >CSS</Button>{' '}</div>
                   <div style={{marginLeft:"5px"}}><Button variant="primary" size="sm" >JavaScript</Button>{' '}</div>
-                  <div style={{marginLeft:"5px"}}><Button variant="info" size="sm" href="https://github.com/nnaiyer/nnaiyer.github.io" target="_blank">
+                  <div style={{marginLeft:"5px"}}><Button variant="info" size="sm" href="https://github.com/nnaiyer/nnaiyer.github.io" target="_blank" rel="noopener noreferrer">
                     <IconContext.Provider value={{ style: {fontSize: '15px', marginTop:"-2px"}}}>
                       <GrGithub/> Repository
                     </IconContext.Provider>
