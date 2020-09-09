@@ -28,7 +28,6 @@ export default class Projects extends Component{
   render(){
    return(
       <div>
-
       <div className="projects container" id="projects">
         <Row>
         <Col lg={4} style={{marginTop:"300px"}}>
