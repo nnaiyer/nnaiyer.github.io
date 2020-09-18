@@ -190,7 +190,7 @@ function App() {
               I also have fun experimenting with food recipes! And if you're ever having trouble deciding what to eat in Austin, you can take a look at my favorite places to eat <a href="https://docs.google.com/spreadsheets/d/1L4AV6epjmTvINBdifnoo9D4oBSQW_bxOIT3oo4QjHec/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><b>here!</b></a>
               <br/><br/><br/><br/>
 
-              <div className="techIcons">
+              <div className="techIcons" style={{paddingBottom:"20px"}}>
                 <IconContext.Provider value={{ style: {fontSize: '40px'}}}>
                     <div>
                       <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 150 }} overlay={renderTooltip("Ruby")}>

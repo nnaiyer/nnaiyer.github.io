@@ -16,7 +16,7 @@ export default class ValueSix extends Component{
                   <div>
                   <div> <h2 style={{textAlign:"center"}}> Voter Registration - Texas (VRTX) </h2> </div>
                   <div className="Photo">
-                    <img src="vrtxbot.png" style={{"height": "80%", "width": "78%", border:"3px solid aliceblue"}} alt="Image of Bargain Bot"/>
+                    <img src="vrtxbot.png" style={{"height": "100%", "width": "100%", border:"3px solid aliceblue"}} alt="Image of Bargain Bot"/>
                   </div>
                   <Row style={{justifyContent:"center", marginTop:"5px"}}>
                   <div><Button variant="primary" size="sm">Ruby</Button>{' '}</div>

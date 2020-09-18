@@ -30,9 +30,9 @@ export default class Projects extends Component{
       <div>
       <div className="projects container" id="projects">
         <Row>
-        <Col lg={4} style={{marginTop:"300px"}}>
+        <Col lg={6} style={{marginTop:"300px", background:""}}>
         <div className="wrap">
-          <div class="hexClass" style={{right:"46px", bottom:"56px"}}>
+          <div class="hexClass" style={{right:"6px", bottom:"56px"}}>
             <div class="hexagon hexagon2">
               <div class="hexagon-in1">
                 <div class="hexagon-in-pep" onClick={() => this.handleClick(1)}>
@@ -40,7 +40,7 @@ export default class Projects extends Component{
               </div>
              </div>
           </div>
-          <div class="hexClass" style={{right:"110px", bottom:"135px"}}>
+          <div class="hexClass" style={{right:"70px", bottom:"135px"}}>
             <div class="hexagon hexagon2">
               <div class="hexagon-in1">
                 <div class="hexagon-in2">
@@ -48,7 +48,7 @@ export default class Projects extends Component{
               </div>
              </div>
           </div>
-          <div class="hexClass" style={{right:"174px", bottom:"55px"}}>
+          <div class="hexClass" style={{right:"134px", bottom:"55px"}}>
             <div class="hexagon hexagon2">
               <div class="hexagon-in1">
                 <div class="hexagon-in-nin" onClick={() => this.handleClick(3)}>
@@ -56,7 +56,7 @@ export default class Projects extends Component{
               </div>
              </div>
           </div>
-          <div class="hexClass" style={{right:"510px", top:"23px"}}>
+          <div class="hexClass" style={{right:"470px", top:"23px"}}>
             <div class="hexagon hexagon2">
               <div class="hexagon-in1">
                 <div class="hexagon-in-prof" onClick={() => this.handleClick(4)}>
@@ -64,7 +64,7 @@ export default class Projects extends Component{
               </div>
              </div>
           </div>
-          <div class="hexClass" style={{right:"846px", top:"102px"}}>
+          <div class="hexClass" style={{right:"806px", top:"102px"}}>
             <div class="hexagon hexagon2">
               <div class="hexagon-in1">
                 <div class="hexagon-in2">
@@ -72,7 +72,7 @@ export default class Projects extends Component{
               </div>
              </div>
           </div>
-          <div class="hexClass" style={{bottom:"55px", left:"90px"}}>
+          <div class="hexClass" style={{bottom:"55px", right:"-130px"}}>
             <div class="hexagon hexagon2">
               <div class="hexagon-in1">
                 <div class="hexagon-in-vrtx" onClick={() => this.handleClick(6)}>
@@ -80,7 +80,7 @@ export default class Projects extends Component{
               </div>
              </div>
           </div>
-          <div class="hexClass" style={{bottom:"134px", left:"27px"}}>
+          <div class="hexClass" style={{bottom:"134px", right:"-67px"}}>
             <div class="hexagon hexagon2">
               <div class="hexagon-in1">
                 <div class="hexagon-in2">
@@ -90,7 +90,7 @@ export default class Projects extends Component{
           </div>
           </div>
           </Col>
-          <Col style={{marginTop:"100px", marginLeft:"100px", textAlign:"center", background:""}}>
+          <Col style={{marginTop:"100px", marginLeft:"", textAlign:"center", background:""}}>
             {this.state.value === 0 ? <ValueZero/> :""}
             {this.state.value === 1 ? <ValueOne/> :""}
             {this.state.value === 3 ? <ValueThree/> :""}

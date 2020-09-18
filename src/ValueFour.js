@@ -16,7 +16,7 @@ export default class ValueFour extends Component{
                   <div>
                   <div> <h2 style={{textAlign:"center"}}> Profile Website </h2> </div>
                   <div className="Photo">
-                    <img src="portfolio.png" style={{"height": "80%", "width": "78%", border:"3px solid aliceblue"}} alt="Portfolio site of me"/>
+                    <img src="portfolio.png" style={{"height": "100%", "width": "100%", border:"3px solid aliceblue"}} alt="Portfolio site of me"/>
                   </div>
                   <Row style={{justifyContent:"center", marginTop:"5px"}}>
                   <div><Button variant="primary" size="sm">ReactJS</Button>{' '}</div>

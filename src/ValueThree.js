@@ -16,7 +16,7 @@ export default class ValueThree extends Component{
                   <div>
                   <div> <h2 style={{textAlign:"center"}}> Bargain Bot </h2> </div>
                   <div className="Photo">
-                    <img src="bbot.png" style={{"height": "80%", "width": "78%", border:"3px solid aliceblue"}} alt="Image of Bargain Bot"/>
+                    <img src="bbot.png" style={{"height": "100%", "width": "100%", border:"3px solid aliceblue"}} alt="Image of Bargain Bot"/>
                   </div>
                   <Row style={{justifyContent:"center", marginTop:"5px"}}>
                   <div><Button variant="primary" size="sm">Ruby</Button>{' '}</div>
@@ -26,7 +26,7 @@ export default class ValueThree extends Component{
                     </IconContext.Provider>
                     </Button>{' '}</div>
                   </Row>
-                  <div style={{textAlign:"left"}}> <br/> As evident from the image above, I love playing games on my Switch. I also love finding deals for my games. So I wrote a small bot that browses a few sites (mainly Reddit) and finds any deals for games that are on my wishlist. <br/><br/>The bot is written in Ruby and it scrapes the web using Selenium. Although Selenium is overkill, it was really straightforward for such a simple use case so I ended up using it. The bot runs in scheduled intervals and emails me a list of any deals it finds. It's helped me get some good deals so far! </div>
+                  <div style={{textAlign:"left"}}> <br/> I love playing games on my Switch; I also love finding deals for my games. So I wrote a small bot that browses a few sites (mainly Reddit) and finds any deals for games that are on my wishlist. <br/><br/>The bot is written in Ruby and it scrapes the web using Selenium. Although Selenium is overkill, it was really straightforward for such a simple use case so I ended up using it. The bot runs in scheduled intervals and emails me a list of any deals it finds. It's helped me get some good deals so far! </div>
 
               </div>
                   )

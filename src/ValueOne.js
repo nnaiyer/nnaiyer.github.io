@@ -16,7 +16,7 @@ export default class ValueOne extends Component{
                   <div>
                   <div> <h2 style={{textAlign:"center"}}> Image Cartoonization </h2> </div>
                   <div className="Photo">
-                    <img src="cartoonization.png" style={{"height": "80%", "width": "78%", border:"3px solid aliceblue"}} alt="Image of Bargain Bot"/>
+                    <img src="cartoonization.png" style={{"height": "100%", "width": "100%", border:"3px solid aliceblue"}} alt="Image of Bargain Bot"/>
                   </div>
                   <Row style={{justifyContent:"center", marginTop:"5px"}}>
                   <div><Button variant="primary" size="sm">MATLAB</Button>{' '}</div>
@@ -26,7 +26,7 @@ export default class ValueOne extends Component{
                     </IconContext.Provider>
                     </Button>{' '}</div>
                   </Row>
-                  <div style={{textAlign:"left"}}> <br/> One of my favorite classes in college was Image Processing with <a href="https://en.wikipedia.org/wiki/Alan_Bovik" target="_blank" rel="noopener noreferrer"><b>Alan Bovik</b></a>. In that class I wrote this image cartoonization code as a project in MATLAB. Essentially what it does is take an image, cluster it using some algorithm (K-Means in this case), and overlaying an edge map on top of that clustered image. <br/><br/>The concept is pretty straightforward and it was fun to experiment with different images to see what kind of result I'd get. Be warned, the code is... not very pretty. One day I hope to to revisit this to optimize the program. <br/><br/>You can also check out the report for this project <a href={Pdf} target="_blank" rel="noopener noreferrer"><b>here!</b></a></div>
+                  <div style={{textAlign:"left"}}> <br/> One of my favorite classes in college was Image Processing with <a href="https://en.wikipedia.org/wiki/Alan_Bovik" target="_blank" rel="noopener noreferrer"><b>Alan Bovik</b></a>. In that class I wrote this image cartoonization code as a project in MATLAB. Essentially what it does is take an image, cluster it using some algorithm (K-Means in this case), and overlaying an edge map on top of that clustered image. <br/><br/>The concept is pretty straightforward and it was fun to experiment with different images to see what result I'd get. Be warned, the code is... not very pretty. One day I hope to to revisit this to optimize the program. <br/><br/>You can also check out the report for this project <a href={Pdf} target="_blank" rel="noopener noreferrer"><b>here!</b></a></div>
 
               </div>
                   )
